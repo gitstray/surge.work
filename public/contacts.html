@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start a project with Surge.Work. Welcome to the world of freelancers.">
+    <meta name="keywords" content="Offshore outsourcing, Freelancers, php Programmers, Coders, Developers,  Web Designers, Website Design">
+    <meta name="author" content="GOBlazon - GitStray">
+	<title>Surge.Work | Hire freelancers to help you with your next project.</title>
+	
+	<!-- update the version number as needed -->
+    <script defer src="/__/firebase/6.4.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/6.4.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/6.4.0/firebase-database.js"></script>
+    <script defer src="/__/firebase/6.4.0/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/6.4.0/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
+
+    <!-- GOOGLE WEB FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600" rel="stylesheet">
+
+    <!-- BASE CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/menu.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+	<link href="css/vendors.css" rel="stylesheet">
+
+    <!-- YOUR CUSTOM CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+	
+	<!-- MODERNIZR MENU -->
+	<script src="js/modernizr.js"></script>
+
+</head>
+
+<body>
+	
+	<div id="preloader">
+		<div data-loader="circle-side"></div>
+	</div><!-- /Preload -->
+	
+	<div id="loader_form">
+		<div data-loader="circle-side-2"></div>
+	</div><!-- /loader_form -->
+	
+	<header>
+		<div class="container-fluid">
+		    <div class="row">
+                <div class="col-3">
+                    <a href="index.html"><img src="img/logo.png" alt="" width="49" height="35"></a>
+                </div>
+                <div class="col-9">
+                    <div id="social">
+                        <!--ul>
+                            <li><a href="#0"><i class="icon-facebook"></i></a></li>
+                            <li><a href="#0"><i class="icon-twitter"></i></a></li>
+                            <li><a href="#0"><i class="icon-google"></i></a></li>
+                            <li><a href="#0"><i class="icon-linkedin"></i></a></li>
+                        </ul-->
+                    </div>
+                    <!-- /social -->
+					<a href="#0" class="cd-nav-trigger">Menu<span class="cd-icon"></span></a>
+					<!-- /menu button -->
+                    <nav>
+						<ul class="cd-primary-nav">
+							<li><a href="index.html" class="animated_link">Request a Developer</a></li>
+							<li><a href="about.html" class="animated_link">About Us Surge.Work</a></li>
+							<li><a href="contacts.html" class="animated_link">Contact Us</a></li>
+						</ul>
+					</nav>
+					<!-- /menu -->
+                </div>
+            </div>
+		</div>
+		<!-- /container -->
+	</header>
+	<!-- /Header -->
+
+	<main id="general_page">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13004069.896900944!2d-104.65611544442766!3d37.27565371492453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited+States!5e0!3m2!1sen!2sus!4v1566418234820!5m2!1sen!2sus" width="600" height="450" allowfullscreen id="map_iframe"></iframe>
+		<!-- end map-->
+		<div class="container margin_60_35">
+			<div class="row">
+				<div class="col-lg-8">
+					<h3>Contact us</h3>
+					<p>
+						Have the right team work on your project from the start. Feel free to contact us with any concern or questions. We look forward in hearing from you.
+					</p>
+					<div>
+						<div id="message-contact"></div>
+						<form method="post" action="assets/contact.php" id="contactform">
+							<div class="row">
+								<div class="col-md-6 col-sm-6">
+									<div class="form-group">
+										<label>First name</label>
+										<input type="text" class="form-control" id="name_contact" name="name_contact" placeholder="Jhon">
+									</div>
+								</div>
+								<div class="col-md-6 col-sm-6">
+									<div class="form-group">
+										<label>Last name</label>
+										<input type="text" class="form-control" id="lastname_contact" name="lastname_contact" placeholder="Doe">
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6 col-sm-6">
+									<div class="form-group">
+										<label>Email</label>
+										<input type="email" id="email_contact" name="email_contact" class="form-control" placeholder="jhon@email.com">
+									</div>
+								</div>
+								<div class="col-md-6 col-sm-6">
+									<div class="form-group">
+										<label>Phone number</label>
+										<input type="text" id="phone_contact" name="phone_contact" class="form-control" placeholder="00 44 5435435">
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="form-group">
+										<label>Your message</label>
+										<textarea rows="5" id="message_contact" name="message_contact" class="form-control" style="height:100px;" placeholder="Hello world!"></textarea>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label>Are you human? 3 + 1 =</label>
+										<input type="text" id="verify_contact" class=" form-control" placeholder=" 3 + 1 =">
+									</div>
+									<p><input type="submit" value="Submit" class="btn_1 add_bottom_15" id="submit-contact"></p>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<!-- End col lg 9 -->
+				<aside class="col-lg-4">
+					<div class="box_style_2">
+						<h4>Contacts info</h4>
+						<ul class="contacts_info">
+							<li>Administration
+								<br>
+								<a href="tel://16026228555">+1 (602) 622-8555</a>
+								<br><a href="mailto:surge@goblazon.com">surge@GOBlazon.com</a>
+								<br>
+								<small>Monday to Friday 9am - 6pm</small>
+							</li>
+							
+						</ul>
+					</div>
+				</aside>
+				<!--End aside -->
+			</div>
+			<!-- end row-->
+		</div>
+		<!-- end container-->
+	</main>
+	
+	<footer class="clearfix">
+		<div class="container">
+			<p>© 2019 Surge.Work - GOBlazon, LLC</p>
+			<ul>
+				<li><a href="index.html" class="animated_link">Request a Developer</a></li>
+				<li><a href="#" data-toggle="modal" data-target="#terms-txt" class="animated_link">Terms and conditions</a></li>
+				<li><a href="contacts.html" class="animated_link">Contacts</a></li>
+			</ul>
+		</div>
+	</footer>
+	<!-- end footer-->
+
+	<div class="cd-overlay-nav">
+		<span></span>
+	</div>
+	<!-- /cd-overlay-nav -->
+
+	<div class="cd-overlay-content">
+		<span></span>
+	</div>
+	<!-- /cd-overlay-content -->
+
+	<!-- Modal terms -->
+	<div class="modal fade" id="terms-txt" tabindex="-1" role="dialog" aria-labelledby="termsLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title" id="termsLabel">Terms and conditions</h4>
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			</div>
+			<div class="modal-body">
+				<p>Lorem ipsum dolor sit amet, in porro albucius qui, in <strong>nec quod novum accumsan</strong>, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+				<p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus. Lorem ipsum dolor sit amet, <strong>in porro albucius qui</strong>, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+				<p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn_1" data-dismiss="modal">Close</button>
+			</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+		</div>
+		<!-- /.modal -->
+	
+	<!-- COMMON SCRIPTS -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/common_scripts.min.js"></script>
+	<script src="js/velocity.min.js"></script>
+	<script src="js/functions.js"></script>
+	
+	<!-- SPECIFIC SCRIPTS -->
+	<script src="assets/validate.js"></script>
+
+</body>
+</html>
