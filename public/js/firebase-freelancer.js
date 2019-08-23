@@ -5,7 +5,7 @@ firebase.initializeApp(config);
 let messagesRef = firebase.database().ref('messages');
 
 //Listen for submit
-document.getElementById('contactForm').addEventListener('sumbit', submitForm);
+document.getElementById('freelanceForm').addEventListener('sumbit', submitForm);
 
 //submit form
 function submitForm(e){
@@ -49,7 +49,7 @@ function saveMessage(projectType, projectDis, fileupload, budget, firstName, las
         firstName: firstName,
         lastName: lastName,
         email: email,
-        telephone: telephone,
+        telephone: telephone
 
     })
 }
