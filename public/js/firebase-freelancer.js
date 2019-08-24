@@ -1,12 +1,4 @@
-const firebaseConfig = {
-    apiKey: "AIzaSyD3ykpnxzCgilGv4f5vZB9LjC4Bs-SbfL0",
-    authDomain: "goblazon-app.firebaseapp.com",
-    databaseURL: "https://goblazon-app.firebaseio.com",
-    projectId: "goblazon-app",
-    storageBucket: "goblazon-app.appspot.com",
-    messagingSenderId: "900318115494",
-    appId: "1:900318115494:web:53ff79fc2386c3ee"
-  };
+
 
 
 firebase.initializeApp(config);
@@ -22,14 +14,14 @@ function submitForm(e){
     e.preventDefault();
 
     // Get Values
-    let projectType = getInputVal('projectType');
-    let projectDis = getInputVal('projectDis');
-    let fileupload = getInputVal('fileupload');
-    let budget = getInputVal('budget');
-    let firstName = getInputVal('firstName');
-    let lastName = getInputVal('lastName');
-    let email = getInputVal('email');
-    let telephone = getInputVal('telephone');
+    var projectType = getInputVal('projectType');
+    var projectDis = getInputVal('projectDis');
+    var fileupload = getInputVal('fileupload');
+    var budget = getInputVal('budget');
+    var firstName = getInputVal('firstName');
+    var lastName = getInputVal('lastName');
+    var email = getInputVal('email');
+    var telephone = getInputVal('telephone');
 
     //Save Message
     saveMessage(projectType, projectDis, fileupload, budget, firstName, lastName, email, telephone);
@@ -50,7 +42,7 @@ function getInputVal(id){
 
 // Save message to firebase
 function saveMessage(projectType, projectDis, fileupload, budget, firstName, lastName, email, telephone){
-    let newMessageRef = messagesRef.push();
+    var newMessageRef = messagesRef.push();
     newMessageRef.set({
         projectType: projectType,
         projectDis: projectDis,
