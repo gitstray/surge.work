@@ -1,3 +1,13 @@
+const firebaseConfig = {
+    apiKey: "AIzaSyD3ykpnxzCgilGv4f5vZB9LjC4Bs-SbfL0",
+    authDomain: "goblazon-app.firebaseapp.com",
+    databaseURL: "https://goblazon-app.firebaseio.com",
+    projectId: "goblazon-app",
+    storageBucket: "goblazon-app.appspot.com",
+    messagingSenderId: "900318115494",
+    appId: "1:900318115494:web:53ff79fc2386c3ee"
+  };
+
 
 firebase.initializeApp(config);
 
